@@ -18,16 +18,16 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `mahasiswa`
+-- Database: `php_crud`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mahasiswa`
+-- Table structure for table `php_crud`
 --
 
-CREATE TABLE `mahasiswa` (
+CREATE TABLE `php_crud` (
   `id` int(11) NOT NULL,
   `nama` varchar(100) NOT NULL,
   `NIM` varchar(12) NOT NULL,
@@ -38,10 +38,10 @@ CREATE TABLE `mahasiswa` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `mahasiswa`
+-- Dumping data for table `php_crud`
 --
 
-INSERT INTO `mahasiswa` (`id`, `nama`, `NIM`, `jenis_kelamin`, `jurusan`, `agama`, `IPK`) VALUES
+INSERT INTO `php_crud` (`id`, `nama`, `NIM`, `jenis_kelamin`, `jurusan`, `agama`, `IPK`) VALUES
 (1, 'John Smith', '123', 'Laki-Laki', 'Ilmu Komputer', 'Hindu', 3.9);
 
 --
@@ -49,9 +49,9 @@ INSERT INTO `mahasiswa` (`id`, `nama`, `NIM`, `jenis_kelamin`, `jurusan`, `agama
 --
 
 --
--- Indexes for table `mahasiswa`
+-- Indexes for table `php_crud`
 --
-ALTER TABLE `mahasiswa`
+ALTER TABLE `php_crud`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `NIM_unique` (`NIM`);
 
@@ -60,9 +60,9 @@ ALTER TABLE `mahasiswa`
 --
 
 --
--- AUTO_INCREMENT for table `mahasiswa`
+-- AUTO_INCREMENT for table `php_crud`
 --
-ALTER TABLE `mahasiswa`
+ALTER TABLE `php_crud`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
